@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "datakit-all"
-version = "0.4.0"
+version = "0.4.1"
 description = "The datakit CLI bundled with the standard AP Data Team plugin set."
 authors = [
     {name = "Larry Fenn", email = "lfenn@ap.org"},
@@ -35,6 +35,13 @@ dependencies = [
     "datakit-github>=0.2.1",
     "datakit-gitlab>=0.6.0",
 ]
+
+# Re-expose the CLI entry point from datakit-core. `uv tool`/`pipx` only
+# install executables declared by the *target* package, not its dependencies,
+# so a bare metapackage provides no `datakit` command. This string resolves at
+# runtime from datakit-core, which is installed as a dependency.
+[project.scripts]
+datakit = "datakit.main:main"
 
 [project.urls]
 Homepage = "https://github.com/associatedpress/datakit-all"
