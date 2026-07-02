@@ -1,0 +1,53 @@
+# NOTE: Unlike the other datakit-* repos, this package uses the `hatchling`
+# build backend instead of `uv_build`. This is a metapackage: it ships no
+# Python modules, only dependency metadata. `uv_build` expects a module to
+# build; hatchling's `bypass-selection` lets us build an empty wheel.
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "datakit-all"
+version = "0.4.0"
+description = "The datakit CLI bundled with the standard AP Data Team plugin set."
+authors = [
+    {name = "Larry Fenn", email = "lfenn@ap.org"},
+]
+license = {text = "ISC"}
+keywords = ["datakit"]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: ISC License (ISCL)",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+]
+# The whole point of this package: pull the datakit CLI plus the standard
+# plugins into a single environment so `uv tool install datakit` just works.
+# Each plugin registers its commands via the `datakit.plugins` entry-point
+# group, so installing them together lights up every command under `datakit`.
+dependencies = [
+    "datakit-core>=0.4.0",
+    "datakit-project>=0.4.0",
+    "datakit-data>=0.6.3",
+    "datakit-github>=0.2.1",
+    "datakit-gitlab>=0.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/associatedpress/datakit-all"
+Source = "https://github.com/associatedpress/datakit-all"
+Tracker = "https://github.com/associatedpress/datakit-all/issues"
+
+[tool.hatch.build.targets.wheel]
+# Metapackage: no modules to include, just dependency metadata.
+bypass-selection = true
+
+[tool.tox]
+env_list = ["py310", "py311", "py312", "py313"]
+
+[tool.tox.env_run_base]
+# No source or tests of our own; a successful build/install is the whole test.
+commands = [["python", "-c", "import importlib.metadata as m; m.version('datakit-all')"]]
