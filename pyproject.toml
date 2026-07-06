@@ -1,4 +1,4 @@
-# NOTE: Unlike the other datakit-* repos, this package uses the `hatchling`
+i# NOTE: Unlike the other datakit-* repos, this package uses the `hatchling`
 # build backend instead of `uv_build`. This is a metapackage: it ships no
 # Python modules, only dependency metadata. `uv_build` expects a module to
 # build; hatchling's `bypass-selection` lets us build an empty wheel.
@@ -30,10 +30,10 @@ classifiers = [
 # group, so installing them together lights up every command under `datakit`.
 dependencies = [
     "datakit-core>=0.5.1",
-    "datakit-project>=0.4.0",
-    "datakit-data>=0.6.3",
-    "datakit-github>=0.2.1",
-    "datakit-gitlab>=0.6.0",
+    "datakit-project>=0.5.1",
+    "datakit-data>=0.7.0",
+    "datakit-github>=0.3.0",
+    "datakit-gitlab>=0.7.0",
 ]
 
 # Re-expose the CLI entry point from datakit-core. `uv tool`/`pipx` only
