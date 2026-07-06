@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "datakit-all"
-version = "0.4.1"
+version = "0.5.0"
 description = "The datakit CLI bundled with the standard AP Data Team plugin set."
 authors = [
     {name = "Larry Fenn", email = "lfenn@ap.org"},
@@ -29,7 +29,7 @@ classifiers = [
 # Each plugin registers its commands via the `datakit.plugins` entry-point
 # group, so installing them together lights up every command under `datakit`.
 dependencies = [
-    "datakit-core>=0.4.0",
+    "datakit-core>=0.5.1",
     "datakit-project>=0.4.0",
     "datakit-data>=0.6.3",
     "datakit-github>=0.2.1",
@@ -51,6 +51,11 @@ Tracker = "https://github.com/associatedpress/datakit-all/issues"
 [tool.hatch.build.targets.wheel]
 # Metapackage: no modules to include, just dependency metadata.
 bypass-selection = true
+
+[dependency-groups]
+dev = [
+    "bumpversion",
+]
 
 [tool.tox]
 env_list = ["py310", "py311", "py312", "py313"]
