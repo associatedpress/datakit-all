@@ -1,4 +1,4 @@
-i# NOTE: Unlike the other datakit-* repos, this package uses the `hatchling`
+# NOTE: Unlike the other datakit-* repos, this package uses the `hatchling`
 # build backend instead of `uv_build`. This is a metapackage: it ships no
 # Python modules, only dependency metadata. `uv_build` expects a module to
 # build; hatchling's `bypass-selection` lets us build an empty wheel.
@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "datakit-all"
-version = "0.5.0"
+version = "0.6.0"
 description = "The datakit CLI bundled with the standard AP Data Team plugin set."
 authors = [
     {name = "Larry Fenn", email = "lfenn@ap.org"},
