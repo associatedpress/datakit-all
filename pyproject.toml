@@ -29,11 +29,11 @@ classifiers = [
 # Each plugin registers its commands via the `datakit.plugins` entry-point
 # group, so installing them together lights up every command under `datakit`.
 dependencies = [
-    "datakit-core>=0.5.2",
-    "datakit-project>=0.5.2",
-    "datakit-data>=0.7.0",
-    "datakit-github>=0.3.1",
-    "datakit-gitlab>=0.7.1",
+    "datakit-core>=0.5.3",
+    "datakit-project>=0.5.3",
+    "datakit-data>=0.7.1",
+    "datakit-github>=0.3.2",
+    "datakit-gitlab>=0.7.2",
 ]
 
 # Re-expose the CLI entry point from datakit-core. `uv tool`/`pipx` only
