@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "datakit-all"
-version = "0.6.1"
+version = "0.6.2"
 description = "The datakit CLI bundled with the standard AP Data Team plugin set."
 authors = [
     {name = "Larry Fenn", email = "lfenn@ap.org"},

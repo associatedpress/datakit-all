@@ -429,7 +429,7 @@ wheels = [
 
 [[package]]
 name = "datakit-all"
-version = "0.6.1"
+version = "0.6.2"
 source = { editable = "." }
 dependencies = [
     { name = "datakit-core" },
@@ -446,11 +446,11 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "datakit-core", specifier = ">=0.5.2" },
-    { name = "datakit-data", specifier = ">=0.7.0" },
-    { name = "datakit-github", specifier = ">=0.3.1" },
-    { name = "datakit-gitlab", specifier = ">=0.7.1" },
-    { name = "datakit-project", specifier = ">=0.5.2" },
+    { name = "datakit-core", specifier = ">=0.5.3" },
+    { name = "datakit-data", specifier = ">=0.7.1" },
+    { name = "datakit-github", specifier = ">=0.3.2" },
+    { name = "datakit-gitlab", specifier = ">=0.7.2" },
+    { name = "datakit-project", specifier = ">=0.5.3" },
 ]
 
 [package.metadata.requires-dev]
@@ -458,61 +458,61 @@ dev = [{ name = "bumpversion" }]
 
 [[package]]
 name = "datakit-core"
-version = "0.5.2"
+version = "0.5.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cliff" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/40/4c/94d6ba4df48d5961c6a5274a22028065b0a631317ec214eb73ad2b75fc00/datakit_core-0.5.2.tar.gz", hash = "sha256:f5e411212ab68d20d9af670c4693892f0f37392cda7bdc3fbcbd15576516c73c", size = 9735, upload-time = "2026-07-07T16:01:17.225Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/65/b7/902e1c78e1d1adf5bb0e18b47348c21b4d6670fb73a2b9df896cbf75e7e4/datakit_core-0.5.3.tar.gz", hash = "sha256:b0a3e20f315ab6e267705382d4725edb5ce8f2b06fffc1d4dd8554449a9d4b35", size = 9731, upload-time = "2026-07-07T18:17:20.186Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/63/de/f74c931e61de6d8d96e4cf1572b17c6fcce71234a4c58e37d2557dbddd0c/datakit_core-0.5.2-py3-none-any.whl", hash = "sha256:ca20430a18ce0e4fb0a7ef726b026517a60b6744d20f07c629359efc109ece8f", size = 12803, upload-time = "2026-07-07T16:01:16.386Z" },
+    { url = "https://files.pythonhosted.org/packages/82/b3/8ff5181eac722978d9fe60cd56fb02f28e9fe2a37ba6764b463c8bf16348/datakit_core-0.5.3-py3-none-any.whl", hash = "sha256:c8c70cdaafb6ca435f0b55bed2ed704273c8076e4ddbf098ff690a3639b9043b", size = 12803, upload-time = "2026-07-07T18:17:19.302Z" },
 ]
 
 [[package]]
 name = "datakit-data"
-version = "0.7.0"
+version = "0.7.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "boto3" },
     { name = "cliff" },
     { name = "datakit-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fe/6a/4bc61fd33a447b572644cab58ed2cddee53a299859085f46fb7397335ab4/datakit_data-0.7.0.tar.gz", hash = "sha256:56a88a427396355d7abb7f69ad1162b2c6c7b76cca16575172af978b93a48f16", size = 8731, upload-time = "2026-07-06T17:21:20.178Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/eb/1f/f50e6a71d2432940523b52812f396cd973f5ae6d65515a904d4c6155da81/datakit_data-0.7.1.tar.gz", hash = "sha256:041840305bb0847af186b68849ca1ebbb40a4b710d55e1d7dc425d4f6952b002", size = 8736, upload-time = "2026-07-07T18:19:07.938Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7a/7f/9aa322d924f2d5bc85bcf0ffc74404f367bde71930b4814ab0357e6d93d8/datakit_data-0.7.0-py3-none-any.whl", hash = "sha256:fb74e2195d7225c4915d169095f0bc8a9fc76cf7699a13ef6f1068650509803b", size = 13139, upload-time = "2026-07-06T17:21:20.956Z" },
+    { url = "https://files.pythonhosted.org/packages/32/3d/4b04334e18066710355554e3a7111cd0191a0cd88c6cb2631730d550368e/datakit_data-0.7.1-py3-none-any.whl", hash = "sha256:734488c255e6e91f4c113fc2f86539f8f4a2796eb6b5c4d061555c2babbf59f7", size = 13139, upload-time = "2026-07-07T18:19:07.11Z" },
 ]
 
 [[package]]
 name = "datakit-github"
-version = "0.3.1"
+version = "0.3.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cliff" },
     { name = "datakit-core" },
     { name = "pygithub" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ba/cd/a748def8550c83466b75845dbb78b15da80a629c743ed75cd563406bfadd/datakit_github-0.3.1.tar.gz", hash = "sha256:0c98f8120d026771d1a734e8bdbae1e264053a95a09eeb4e46f232aae289e2d7", size = 3785, upload-time = "2026-07-07T15:58:25.57Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/35/f7/3a4b137bd087ae3c377889811456a429843392fb6519d547bc72f04d2d21/datakit_github-0.3.2.tar.gz", hash = "sha256:6519ffa702f4f545667a83fddb1ea0b6993507161c2842dc67d1c1a8df10270c", size = 3793, upload-time = "2026-07-07T18:21:35.247Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a7/f2/1356cfed1d70b93316771fced52c6a002fb288cebe53cc218448bf82efaa/datakit_github-0.3.1-py3-none-any.whl", hash = "sha256:5eae8d0b60ab850e1b74a065b4f4de6214b7015ab26e1b59e48f1c711b138e9e", size = 5726, upload-time = "2026-07-07T15:58:24.667Z" },
+    { url = "https://files.pythonhosted.org/packages/75/53/89ab1477963a1378b15a8298e700a536c0cf5ce80f9cb5adb67f1b01966b/datakit_github-0.3.2-py3-none-any.whl", hash = "sha256:3ae86d51977f7db4c7054efffb50eebb5edc233ca335caefbd18a17d08f5de3d", size = 5733, upload-time = "2026-07-07T18:21:34.328Z" },
 ]
 
 [[package]]
 name = "datakit-gitlab"
-version = "0.7.1"
+version = "0.7.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cliff" },
     { name = "datakit-core" },
     { name = "python-gitlab" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4d/9e/8e72466f1d1138bfaaba00aeb7fd1267baf4c363c2c827985aece03041ed/datakit_gitlab-0.7.1.tar.gz", hash = "sha256:d191783b88e342b858658126dc27bb4e24610c781bab7d68f67d810cd9571780", size = 3483, upload-time = "2026-07-07T15:54:37.256Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bc/e7/8cd1dfed7e10658c21b35c11dc7f2cbf09507b6ad9836dc006805af4ebcd/datakit_gitlab-0.7.2.tar.gz", hash = "sha256:8f74fd7f975c3650ca3513b13c44d436dd0fb4dfee9571f201992e5b21669557", size = 3492, upload-time = "2026-07-07T18:22:47.993Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/53/dc/19183786b09fb955227d67eb0bcbd2f9d46d898a934d524dafa38c35c4ba/datakit_gitlab-0.7.1-py3-none-any.whl", hash = "sha256:e5ed242a5b0085a108a38a0e3805b3aa7378c8819a02a230e107e2146a083ca1", size = 6285, upload-time = "2026-07-07T15:54:36.471Z" },
+    { url = "https://files.pythonhosted.org/packages/54/d4/432f938170dc6637883b900ae3dab02a414c9386d81b60e3696a6813fb57/datakit_gitlab-0.7.2-py3-none-any.whl", hash = "sha256:6cf108eb764fcf6c9c71d9bb1a31981668a3d70d35da85a3572d1cbab272f483", size = 6289, upload-time = "2026-07-07T18:22:47.172Z" },
 ]
 
 [[package]]
 name = "datakit-project"
-version = "0.5.2"
+version = "0.5.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -521,9 +521,9 @@ dependencies = [
     { name = "datakit-core" },
     { name = "prettytable" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/48/b9/a7a1fe3bacb0aef958203b2943235cebf97ee5ec5a22ed0876b1bb1fbc89/datakit_project-0.5.2.tar.gz", hash = "sha256:9eab06adfd859bcae1d185b325418480d013a389b1593f75b248247d500e124a", size = 6735, upload-time = "2026-07-07T15:56:09.666Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/02/ca/94c8691703bb37f7dc627658fc13ab716f7f683971d379556f640b135c5d/datakit_project-0.5.3.tar.gz", hash = "sha256:aac524f8866d84af0fab3de3caa197f4401d5a96798c8ce55452e8dda7a9a767", size = 6755, upload-time = "2026-07-07T18:25:02.32Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/90/ea/685556e3ae4a2684707b38af462f94f6b72548bb2146b088e610cfcb94b4/datakit_project-0.5.2-py3-none-any.whl", hash = "sha256:a243fab5bba08f836a01a0a6895359b322abee759f43eaf363b6b1849439fff2", size = 11283, upload-time = "2026-07-07T15:56:08.86Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/4e/d263a9f0bbec57a8ae1434baf5015ab333fe7fb7960983cf06e2b4fea780/datakit_project-0.5.3-py3-none-any.whl", hash = "sha256:8ceee1b8253b421dd0eab75ea57a03efaa9acb9f2a1845383f480ca8bfb28d3f", size = 11293, upload-time = "2026-07-07T18:25:01.31Z" },
 ]
 
 [[package]]
