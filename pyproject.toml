@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "datakit-all"
-version = "0.6.2"
+version = "0.6.3"
 description = "The datakit CLI bundled with the standard AP Data Team plugin set."
 authors = [
     {name = "Larry Fenn", email = "lfenn@ap.org"},
@@ -25,13 +25,13 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 # The whole point of this package: pull the datakit CLI plus the standard
-# plugins into a single environment so `uv tool install datakit` just works.
+# plugins into a single environment so `uv tool install datakit-all` just works.
 # Each plugin registers its commands via the `datakit.plugins` entry-point
 # group, so installing them together lights up every command under `datakit`.
 dependencies = [
     "datakit-core>=0.5.3",
     "datakit-project>=0.5.3",
-    "datakit-data>=0.7.1",
+    "datakit-data>=0.7.2",
     "datakit-github>=0.3.2",
     "datakit-gitlab>=0.7.2",
 ]

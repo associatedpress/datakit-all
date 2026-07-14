@@ -429,7 +429,7 @@ wheels = [
 
 [[package]]
 name = "datakit-all"
-version = "0.6.2"
+version = "0.6.3"
 source = { editable = "." }
 dependencies = [
     { name = "datakit-core" },
@@ -447,7 +447,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "datakit-core", specifier = ">=0.5.3" },
-    { name = "datakit-data", specifier = ">=0.7.1" },
+    { name = "datakit-data", specifier = ">=0.7.2" },
     { name = "datakit-github", specifier = ">=0.3.2" },
     { name = "datakit-gitlab", specifier = ">=0.7.2" },
     { name = "datakit-project", specifier = ">=0.5.3" },
@@ -470,16 +470,16 @@ wheels = [
 
 [[package]]
 name = "datakit-data"
-version = "0.7.1"
+version = "0.7.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "boto3" },
     { name = "cliff" },
     { name = "datakit-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/eb/1f/f50e6a71d2432940523b52812f396cd973f5ae6d65515a904d4c6155da81/datakit_data-0.7.1.tar.gz", hash = "sha256:041840305bb0847af186b68849ca1ebbb40a4b710d55e1d7dc425d4f6952b002", size = 8736, upload-time = "2026-07-07T18:19:07.938Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/57/3b/abb55956403f25427f15b6621f8559f2c96a47c7b31c52d01fdb393fa736/datakit_data-0.7.2.tar.gz", hash = "sha256:0381342270d5bcaf1fd55dad18f231149651871aa620148d0f333c6f05e0ec3a", size = 8953, upload-time = "2026-07-14T17:54:47.319Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/3d/4b04334e18066710355554e3a7111cd0191a0cd88c6cb2631730d550368e/datakit_data-0.7.1-py3-none-any.whl", hash = "sha256:734488c255e6e91f4c113fc2f86539f8f4a2796eb6b5c4d061555c2babbf59f7", size = 13139, upload-time = "2026-07-07T18:19:07.11Z" },
+    { url = "https://files.pythonhosted.org/packages/b5/07/e74606ef2a9ceda9e940641d722351e14127c2b2d0cba36917be4bc7f95f/datakit_data-0.7.2-py3-none-any.whl", hash = "sha256:4107e619c6276af50d367eed40747620ba149f88447de48c5e5edcd2525ec3cd", size = 13392, upload-time = "2026-07-14T17:54:48.138Z" },
 ]
 
 [[package]]
